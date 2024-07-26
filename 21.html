@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dolce's Project</title>
+    <link rel="shortcut icon" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAMxSURBVHgB7ZoxTBNRGMe/9wpOd0YX5Zi6SBhQj7I4IV2lCQxGINGYCHRFSdSFUCBxtMJgQlKdRSYSaVcLs22PxIFUE2FpGyaT60Z6z/c9bXNXWvVor7lH+kuavuu9a96/7/3f9329I1DH0JA+BkAnCWUTACQIPoIBMwgjxumptXp4aBzZz5FqIxjUr6gqxIDQpyADDNYDAWvVMIyfeCiEoAjlMvlMgOggEYTPEKUsjGIofoAzIZsIhPExVyo0hm0yOKgHey/RHyAxzLLCtLeXrIDsUDpJGYHbIDnc6BNURm80IEjhgtAV4je6QvxGD7SApmniXVEUnh0oYJplKJWK4r3TuBbSr/XB8vISjIyEmvYxTRMymRzs7e3DbjIFnYDcvBVibi5YXFyAmemp/+5fKBQhkXjvuSDXHlEV1VX//n4NYrElmJ97Al7SkkcQXELxN+vCFzho9Mrd0VG+9IZrHkKi0TnRZ+vjNnhBy0IKxSLk899Eu8jbSDq9z72k/fHScK1vNDoLyVTKk83As+0XBT5/8bImElF54TM9/QC8wNM4gr98PL7h+CwSGQcv8DwgZrJZsR1XwSWHPmo3HYns+fx3x3EoNAztpiNCqptAFfRKu+kmjX6jI0KUOnPbzd8uOiKkPq0plyUKiHbs0R2xB8l24bmQSOSe4/h3XJFwRqLzs47j3U+N03lMMO1JpltaThqbgdF78dmCY3BYm2SyOUc/LNQ2N9/W+mGfh48eu561loWovMzFQZTLJi95Vd7ugxEeuWdmps4EPiyw6oPjOM+97GKxFBgYuCHKAze0LGRsbFS8/kUi8c7TKtG1ELPsLgZgzFhbewVpXr83O98OXJt968P2meXRCPTC6/g6TEzebyoCSfJZsn8fXud2WSGu/3yogusa13M9aFYMeF5E779xbiF+o5s0+o2uEL9xcYTwLesYJIffBzVwRnZAchhhXIhlSS8kQKzVwMlJ6ejade0qv1d9BySEj3vj4CC3JczeQ60VfEAFJEN4g48d20KIeLqGsjA3/gZIAs4EpZWw4zEnO7quBysWWQFCdGD+eryDEDi2GN+cKN35anxJ28/9AspJG/FxWkpAAAAAAElFTkSuQmCC" />
+    <script type="module" crossorigin src="/vite-training/assets/main-8fda559a.js"></script>
+    <link rel="stylesheet" href="/vite-training/assets/main-4555218b.css">
+  </head>
+  <body>
+    <div class="fixed shadow">
+    <div class="bg-c d-flex aic">
+        <a href="index.html" class="d-flex jcc aic p-10">
+                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAMxSURBVHgB7ZoxTBNRGMe/9wpOd0YX5Zi6SBhQj7I4IV2lCQxGINGYCHRFSdSFUCBxtMJgQlKdRSYSaVcLs22PxIFUE2FpGyaT60Z6z/c9bXNXWvVor7lH+kuavuu9a96/7/3f9329I1DH0JA+BkAnCWUTACQIPoIBMwgjxumptXp4aBzZz5FqIxjUr6gqxIDQpyADDNYDAWvVMIyfeCiEoAjlMvlMgOggEYTPEKUsjGIofoAzIZsIhPExVyo0hm0yOKgHey/RHyAxzLLCtLeXrIDsUDpJGYHbIDnc6BNURm80IEjhgtAV4je6QvxGD7SApmniXVEUnh0oYJplKJWK4r3TuBbSr/XB8vISjIyEmvYxTRMymRzs7e3DbjIFnYDcvBVibi5YXFyAmemp/+5fKBQhkXjvuSDXHlEV1VX//n4NYrElmJ97Al7SkkcQXELxN+vCFzho9Mrd0VG+9IZrHkKi0TnRZ+vjNnhBy0IKxSLk899Eu8jbSDq9z72k/fHScK1vNDoLyVTKk83As+0XBT5/8bImElF54TM9/QC8wNM4gr98PL7h+CwSGQcv8DwgZrJZsR1XwSWHPmo3HYns+fx3x3EoNAztpiNCqptAFfRKu+kmjX6jI0KUOnPbzd8uOiKkPq0plyUKiHbs0R2xB8l24bmQSOSe4/h3XJFwRqLzs47j3U+N03lMMO1JpltaThqbgdF78dmCY3BYm2SyOUc/LNQ2N9/W+mGfh48eu561loWovMzFQZTLJi95Vd7ugxEeuWdmps4EPiyw6oPjOM+97GKxFBgYuCHKAze0LGRsbFS8/kUi8c7TKtG1ELPsLgZgzFhbewVpXr83O98OXJt968P2meXRCPTC6/g6TEzebyoCSfJZsn8fXud2WSGu/3yogusa13M9aFYMeF5E779xbiF+o5s0+o2uEL9xcYTwLesYJIffBzVwRnZAchhhXIhlSS8kQKzVwMlJ6ejade0qv1d9BySEj3vj4CC3JczeQ60VfEAFJEN4g48d20KIeLqGsjA3/gZIAs4EpZWw4zEnO7quBysWWQFCdGD+eryDEDi2GN+cKN35anxJ28/9AspJG/FxWkpAAAAAAElFTkSuQmCC" alt="logo" width="30px">
+                <h1 class="h3">Dolce Tseng.</h1>
+        </a>
+        <div class="d-flex ml-auto">
+            <p class="p-10 accentuate small">此頁面暫不支援 RWD. 最後更新：2024/07/26</p>
+        </div>
+    </div>
+</div>    
+    <div class="bg d-flex">
+      <div class="sidebar p-12">
+    <ul class="scrollbar">
+        <li class="p p-4 mb-8"><a href="01.html">Day 01 - HTML 語意標籤運用</a></li>
+        <li class="p p-4 mb-8"><a href="02.html">Day 02 - 移除圖片空隙</a></li>
+        <li class="p p-4 mb-8"><a href="03.html">Day 03 - CSS 選擇器運用</a></li>
+        <li class="p p-4 mb-8"><a href="04.html">Day 04 - 推擠方向</a></li>
+        <li class="p p-4 mb-8"><a href="05.html">Day 05 - margin、padding 混合運用</a></li>
+        <li class="p p-4 mb-8"><a href="06.html">Day 06 - box-model</a></li>
+        <li class="p p-4 mb-8"><a href="07.html">Day 07 - box-sizing</a></li>
+        <li class="p p-4 mb-8"><a href="08.html">Day 08 - 觀念選擇題</a></li>
+        <li class="p p-4 mb-8"><a href="09.html">Day 09 - 練習 Emmet 語法</a></li>
+        <li class="p p-4 mb-8"><a href="10.html">Day 10 - margin: 0 auto、text-align 混合運用</a></li>
+        <li class="p p-4 mb-8"><a href="11.html">Day 11 - 文字設定（font-size、line-height）</a></li>
+        <li class="p p-4 mb-8"><a href="12.html">Day 12 - 整合相同樣式</a></li>
+        <li class="p p-4 mb-8"><a href="13.html">Day 13 - 文字設定（font-family、font-weight、font-style）</a></li>
+        <li class="p p-4 mb-8"><a href="14.html">Day 14 - 垂直水平置中</a></li>
+        <li class="p p-4 mb-8"><a href="15.html">Day 15 - flex 多屬性練習</a></li>
+        <li class="p p-4 mb-8"><a href="16.html">Day 16 - flex 完成九宮格排版</a></li>
+        <li class="p p-4 mb-8"><a href="17.html">Day 17 - background-image</a></li>
+        <li class="p p-4 mb-8"><a href="18.html">Day 18 - container 容器應用</a></li>
+        <li class="p p-4 mb-8"><a href="19.html">Day 19 - 線上 icon 載入</a></li>
+        <li class="p p-4 mb-8"><a href="20.html">Day 20 - CSS 權重覆蓋</a></li>
+        <li class="p p-4 mb-8"><a href="21.html">Day 21 - RWD 觀念選擇題</a></li>
+        <li class="p p-4 mb-8"><a href="22.html">Day 22</a></li>
+        <li class="p p-4 mb-8"><a href="23.html">Day 23</a></li>
+        <li class="p p-4 mb-8"><a href="24.html">Day 24</a></li>
+        <li class="p p-4 mb-8"><a href="25.html">Day 25</a></li>
+    </ul>
+  <footer class="footer">
+        <p class="footer-font">
+            六角學院 <br/>2024 切版直播班 - 每日任務
+        </p>
+        <p class="footer-font">
+        copyright &copy; 2024 Dolce.
+        </p>
+</footer></div>      
+      <div class="container content-scroll pr-20">
+        <!-- 這是 title 無動 -->
+          <div class="border-b d-flex jcsb aic">
+            <h2 class="h1">🏅 Day 21 - RWD 觀念選擇題</h2>
+            <time>2024/07/22</time>
+          </div>
+          <p class="card">作業說明：請回答以下選擇題 </p>
+          <!-- 作業開始 -->
+          <table class="table-w">
+            <thead>
+              <tr>
+                <th scope="col" class="table-title">
+                  1. 請問下列何者是正確的 media query 語法？
+                </th>
+                <td class="table-title"></td>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td class="pb-10">
+                  <ul>
+                    <pre>
+                    <li>A. @media (min-width: 600px) {…}</li>
+                    <li>B. @media min-width: 600px {…} </li>
+                    <li>C. @media (min-width = 600px) {…}</li>
+                    <li>D. @media min-width = 600px {…}</li>
+                  </pre>
+                  </ul>
+                </td>
+                <td class="table-body">A</td>
+              </tr>
+            </tbody>
+          </table> <!-- Q1 -->
+          <table class="table-w">
+            <thead>
+              <tr>
+                <th scope="col" class="table-title">
+                  2. 根據以下 CSS 請問最後字呈現的顏色為什麼？
+                </th>
+                <td class="table-title"></td>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td class="pb-10">
+                  <ul>
+                    <li>
+                    <pre>
+                        &lt;style&gt;
+                        .color-class { color: blue; }
+                        #color-id { color: red; }
+                        div {color: yellow; }
+                        &lt;/style&gt;
+
+                        &lt;div id="color-id" class="color-class">Color&lt;/div&gt;
+                      </pre>
+                    </li>
+                    <pre>
+                    <li>A. 藍色</li>
+                    <li>B. 紅色</li>
+                    <li>C. 黃色</li>
+                    <li>D. 黑色</li>
+                  </pre>
+                  </ul>
+                </td>
+                <td class="table-body">B</td>
+              </tr>
+            </tbody>
+          </table> <!-- Q2 -->
+          <table class="table-w">
+            <thead>
+              <tr>
+                <th scope="col" class="table-title">
+                  3. 根據以下 CSS，在螢幕解析度 600px 時文字的顏色為何？
+                </th>
+                <td class="table-title"></td>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td class="pb-10">
+                  <ul>
+                    <li>
+                    <pre>
+                      @media (min-width: 576px){
+                        p { color: red;}
+                      }
+                      @media (min-width: 768px){
+                        p { color: black; }
+                      }
+                      p { color: yellow; }
+                    </pre>
+                    </li>
+                    <pre>
+                    <li>A. 紅色</li>
+                    <li>B. 黑色</li>
+                    <li>C. 黃色</li>
+                    <li>D. 藍色</li>
+                  </pre>
+                  </ul>
+                </td>
+                <td class="table-body">
+                  <p>C</p>
+                  <p>相同權重的狀況下，黃色寫在後面所以被蓋過去了。</p>
+                </td>
+              </tr>
+            </tbody>
+          </table> <!-- Q3 -->
+          <table class="table-w">
+            <thead>
+              <tr>
+                <th scope="col" class="table-title">
+                  4. 根據以下 CSS，在螢幕解析度 600px 時文字的顏色為何？
+                </th>
+                <td class="table-title"></td>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td class="pb-10">
+                  <ul>
+                    <li>
+                    <pre>
+                      p { color: yellow; }
+                      @media (min-width: 576px){
+                          p { color: red;}
+                      }
+                      @media (min-width: 768px){
+                          p { color: black;}
+                      }
+                    </pre>
+                    </li>
+                    <pre>
+                    <li>A. 紅色</li>
+                    <li>B. 黑色</li>
+                    <li>C. 黃色</li>
+                    <li>D. 藍色</li>
+                  </pre>
+                  </ul>
+                </td>
+                <td class="table-body">
+                  <p>A</p>
+                  <p>600px 大於 576px、小於 768px，所以是紅色。</p>
+                </td>
+              </tr>
+            </tbody>
+          </table> <!-- Q4 -->
+          <table class="table-w">
+            <thead>
+              <tr>
+                <th scope="col" class="table-title">
+                  5. 針對響應式圖片的設定，應該幫 img 標籤加上什麼語法？
+                </th>
+                <td class="table-title"></td>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td class="pb-10">
+                  <ul>
+                    <pre>
+                    <li>A. max-width:100%</li>
+                    <li>B. width:100% </li>
+                    <li>C. max-width: 100px</li>
+                    <li>D. width: 100px</li>
+                  </pre>
+                  </ul>
+                </td>
+                <td class="table-body">A</td>
+              </tr>
+            </tbody>
+          </table> <!-- Q5 -->
+        <!-- 作業結束 -->
+      </div>
+    </div>
+    
+
+    
+  </body>
+</html>

@@ -57,20 +57,149 @@
         <p class="footer-font">
         copyright &copy; 2024 Dolce.
         </p>
-</footer></div>
-        <div class="container content-scroll">
-          <div class="border-b d-flex aic">
-            <h2 class="h1">六角學院 2024-切版直播班每日任務</h2>
+</footer></div>      
+      <div class="container content-scroll pr-20">
+        <!-- 這是 title 勿動 -->
+          <div class="border-b d-flex jcsb aic">
+            <h2 class="h2">🏅 Day 20 - CSS 權重覆蓋</h2>
+            <time>2024/07/19</time>
           </div>
-          <div class="badges d-flex">
-            <img src="https://img.shields.io/badge/html5-%23E34F26.svg?style=for-the-badge&logo=html5&logoColor=white" alt="html5">
-            <img src="https://img.shields.io/badge/css3-%231572B6.svg?style=for-the-badge&logo=css3&logoColor=white" alt="css3">
-            <img src="https://img.shields.io/badge/SASS-hotpink.svg?style=for-the-badge&logo=SASS&logoColor=white" alt="scss">
-            <img src="https://img.shields.io/badge/vite-%23646CFF.svg?style=for-the-badge&logo=vite&logoColor=white" alt="vite">
-            <img src="https://img.shields.io/badge/github%20pages-121013?style=for-the-badge&logo=github&logoColor=white" alt="GitHub pages">
-          </div>
-          <p class="card">💭 原子習慣：作者詹姆斯·克萊爾提到，每天只要進步1%，一年後你就會成長37倍；<br/>這意味著小而持續的改變，像原子一樣累積，最終產生巨大的影響； <br/>每天一個小小的切版觀念，不知不覺中知識就進入了腦袋。 </p>
-        </div>
+          <p class="card">作業說明：請回答以下問題 <br/>口訣：先看權重再看先後<br/>ID > class > tag </p>
+          <!-- 作業開始 -->
+          <table class="table-w">
+            <thead>
+              <tr>
+                <th scope="col" class="table-title">1.請問 p 標籤內文字是什麼顏色</th>
+                <td class="table-title"></td>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td class="pb-10">
+                  <ul>
+                    <p class="table-subtitle mt-10">HTML</p>
+                    <li>
+                      <pre>
+
+                      &lt;p class="blue red black">這是藍色ㄉ文字&lt;/p&gt;
+
+                      </pre>
+                    </li>
+                    <p class="table-subtitle mt-10">CSS</p>
+                    <li>
+                      <pre>
+                      p {
+                        color: white;
+                      }
+
+                      .black {
+                        color: black;
+                      }
+                      
+                      .blue {
+                        color: blue;
+                      }
+                      
+                      .red {
+                        color: red;
+                      }
+                    </pre>
+                    </li>
+                  </ul>
+                </td>
+                <td class="table-body">Answer: 紅色</td>
+              </tr>
+            </tbody>
+          </table> <!-- Q1 -->
+          <table class="table-w">
+            <thead>
+              <tr>
+                <th scope="col" class="table-title">2.請問 p 標籤內文字是什麼顏色</th>
+                <td class="table-title"></td>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td class="pb-10">
+                  <ul>
+                    <p class="table-subtitle  mt-10">HTML</p>
+                    <li>
+                      <pre>
+
+                      &lt;p class="a p">這是藍色ㄉ文字&lt;/p&gt;
+
+                      </pre>
+                    </li>
+                    <p class="table-subtitle  mt-10">CSS</p>
+                    <li>
+                      <pre>
+                        p {
+                          color: white;
+                        }
+                        
+                        .p {
+                          color: blue;
+                        }
+                        
+                        a {
+                          color: red;
+                        }
+                    </pre>
+                    </li>
+                  </ul>
+                </td>
+                <td class="table-body">Answer: 藍色</td>
+              </tr>
+            </tbody>
+          </table> <!-- Q2 -->
+          <table class="table-w">
+            <thead>
+              <tr>
+                <th scope="col" class="table-title">3.請問 p 標籤內文字是什麼顏色</th>
+                <td class="table-title"></td>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td class="pb-10">
+                  <ul>
+                    <p class="table-subtitle mt-10">HTML</p>
+                    <li>
+                      <pre>
+                        
+                      &lt;p class="p blue" id="blue">這是藍色ㄉ文字&lt;/p&gt;
+
+                      </pre>
+                    </li>
+                    <p class="table-subtitle mt-10">CSS</p>
+                    <li>
+                      <pre>
+                        .p {
+                          color: blue;
+                        }
+                        
+                        .blue {
+                          color: red;
+                        }
+                        
+                        p.blue {
+                          color: green;
+                        }
+                        
+                        #blue {
+                          color: white;
+                        }
+                    </pre>
+                    </li>
+                  </ul>
+                </td>
+                <td class="table-body">Answer: 白色</td>
+              </tr>
+            </tbody>
+          </table> <!-- Q3 -->
+        
+        <!-- 作業結束 -->
+      </div>
     </div>
     
 
