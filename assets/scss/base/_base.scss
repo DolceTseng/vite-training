@@ -1,0 +1,78 @@
+/*base*/
+body {
+  font-family: "Poppins", sans-serif;
+  line-height:1.5;
+  scroll-behavior: smooth;
+}
+  
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  //outline: solid 1px;
+  //測試用 outline
+}
+  
+a{
+  text-decoration: none;
+  display: block;
+  color: inherit;
+}
+.test-border {
+  border: 1px solid red;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  vertical-align: middle;
+  padding: 4px;
+}
+pre {
+  font-family: "Fira Code", monospace;
+  white-space: pre-line;
+  font-size: 14px;
+  margin-left: 10px;
+  margin-top: 8px;
+  background-color: #ced2d745;
+  border-radius: 8px;
+  padding:8px;
+}
+  
+//color
+$primary-color: #28c8c8;
+$accentuate-color: #767676;
+$black-color: #2D2E32;
+$dark-primary: darken ($primary-color,20%);
+  
+  
+//font
+.h1 {
+  font-size: 48px;
+}
+
+.h2 {
+  font-size: 36px;
+}
+
+.h3 {
+  font-size: 24px;
+}
+
+.p {
+  font-size: 16px;
+}
+.small {
+  font-size: 14px;
+}
+
+
+a:hover {
+  color: $primary-color;
+}
+
+.list-type {
+  list-style-type: lower-greek;
+  padding-left: 20px;
+}
+

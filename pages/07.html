@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dolce's Project</title>
+    <link rel="shortcut icon" href="../assets/images/dolce-icon.png" />
+  </head>
+  <body>
+    <%- include('./layout/header'); -%>
+    
+    <div class="bg d-flex">
+      <%- include('./layout/sidebar'); -%>
+      
+      <div class="container content-scroll pr-20">
+        <!-- 這是 title 無動 -->
+          <div class="border-b d-flex jcsb aic">
+            <h2 class="h2">🏅 Day 7 - box-sizing</h2>
+            <time>2024/07/02</time>
+          </div>
+          <p class="card">作業說明：計算 .box1 與 .box2 的寬高<br/>（請不要用開發人員工具觀看） </p>
+          <!-- 作業開始 -->
+          <p class="mt-4">Answer: 寬- 338px 高- 110px </p>
+<p class="detail">width：300+16*2+3*2</p>
+<p class="detail">height: 24*3+16*2+3*2</p>
+<div class="box1">
+  <p class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus quia praesentium beatae velit?</p>
+</div>
+<p>Answer: 寬- 300px 高- 110px </p>
+<p class="detail">width: 300px</p>
+<p class="detail">height: 24*3+16*2+3*2</p>
+<div class="box2">
+  <p class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus quia praesentium beatae velit?</p>
+</div>
+
+
+        
+        <!-- 作業結束 -->
+      </div>
+    </div>
+    
+
+    <script type="module" src="../main.js"></script>
+  </body>
+</html>

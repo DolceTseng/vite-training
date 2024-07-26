@@ -1,4 +1,19 @@
-.header{
-  background: #69F0AE;
-  font-size: 64px;
+.bg-c {
+  border-top: 8px solid $primary-color;
+  border-left: 8px solid $primary-color;
+  border-right: 8px solid $primary-color;
+  background-color: #fff;
+}
+.shadow {
+  box-shadow: 0px 0px 4px 0px rgba(8, 43, 43, 0.30);
+ 
+}
+.fixed {
+  width: 100%;
+  position: fixed;
+  z-index: 1;
+}
+
+.accentuate {
+  color: $accentuate-color;
 }

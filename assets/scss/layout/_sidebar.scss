@@ -1,0 +1,33 @@
+
+.sidebar {
+    padding-top: 60px;
+    max-height: 100vh;
+    width: 350px;
+    border-top: 8px solid $primary-color;
+    border-left: 8px solid $primary-color;
+    // border-bottom: 8px solid $primary-color;
+    
+  }
+  
+.scrollbar {
+  max-height: 85%;
+  overflow: auto;
+  scroll-behavior: smooth; //無感?
+  overscroll-behavior: contain; //避免捲到父層
+  scrollbar-width: thin; 
+  scrollbar-color: lighten($primary-color,30%) #fff;
+}
+
+.text-overflow {
+  width: 200px;
+  overflow: hidden;
+  white-space:nowrap;
+  text-overflow: ellipsis;
+  &:hover .hidden-text {
+    display: block;
+  }
+}
+
+.hidden-text {
+  display: none;
+}

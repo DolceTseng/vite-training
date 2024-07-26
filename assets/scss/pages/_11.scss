@@ -1,0 +1,29 @@
+.container-work {
+    width: 1296px;
+    margin: 0 auto;
+    font-family: 'Castoro', serif;
+  }
+  
+  .w-50 {
+    width: 50%;
+  }
+  
+  .title-work {
+    margin-bottom: 16px;
+    color: #ae0000;
+    border-bottom: solid #ae0000 3px;
+    font-size: 40px;            /*作業*/
+    line-height: 1.5;           /*作業*/
+  }
+  .content-work li {
+    margin-bottom: 12px;
+    font-size: 24px;          /*作業*/
+    line-height: 1.5;         /*作業*/
+  }
+  
+  .content-work li:last-child {
+    margin-bottom: 0px;
+  }
+  ul{
+    padding-left: -2rem;
+  }

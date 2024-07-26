@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dolce's Project</title>
+    <link rel="shortcut icon" href="../assets/images/dolce-icon.png" />
+  </head>
+  <body>
+    <%- include('./layout/header'); -%>
+    
+    <div class="bg d-flex">
+      <%- include('./layout/sidebar'); -%>
+      
+      <div class="container content-scroll pr-20">
+        <!-- 這是 title 無動 -->
+          <div class="border-b d-flex jcsb aic">
+            <h2 class="h1">🏅 Day 21 - RWD 觀念選擇題</h2>
+            <time>2024/07/22</time>
+          </div>
+          <p class="card">作業說明：請回答以下選擇題 </p>
+          <!-- 作業開始 -->
+          <table class="table-w">
+            <thead>
+              <tr>
+                <th scope="col" class="table-title">
+                  1. 請問下列何者是正確的 media query 語法？
+                </th>
+                <td class="table-title"></td>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td class="pb-10">
+                  <ul>
+                    <pre>
+                    <li>A. @media (min-width: 600px) {…}</li>
+                    <li>B. @media min-width: 600px {…} </li>
+                    <li>C. @media (min-width = 600px) {…}</li>
+                    <li>D. @media min-width = 600px {…}</li>
+                  </pre>
+                  </ul>
+                </td>
+                <td class="table-body">A</td>
+              </tr>
+            </tbody>
+          </table> <!-- Q1 -->
+          <table class="table-w">
+            <thead>
+              <tr>
+                <th scope="col" class="table-title">
+                  2. 根據以下 CSS 請問最後字呈現的顏色為什麼？
+                </th>
+                <td class="table-title"></td>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td class="pb-10">
+                  <ul>
+                    <li>
+                    <pre>
+                        &lt;style&gt;
+                        .color-class { color: blue; }
+                        #color-id { color: red; }
+                        div {color: yellow; }
+                        &lt;/style&gt;
+
+                        &lt;div id="color-id" class="color-class">Color&lt;/div&gt;
+                      </pre>
+                    </li>
+                    <pre>
+                    <li>A. 藍色</li>
+                    <li>B. 紅色</li>
+                    <li>C. 黃色</li>
+                    <li>D. 黑色</li>
+                  </pre>
+                  </ul>
+                </td>
+                <td class="table-body">B</td>
+              </tr>
+            </tbody>
+          </table> <!-- Q2 -->
+          <table class="table-w">
+            <thead>
+              <tr>
+                <th scope="col" class="table-title">
+                  3. 根據以下 CSS，在螢幕解析度 600px 時文字的顏色為何？
+                </th>
+                <td class="table-title"></td>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td class="pb-10">
+                  <ul>
+                    <li>
+                    <pre>
+                      @media (min-width: 576px){
+                        p { color: red;}
+                      }
+                      @media (min-width: 768px){
+                        p { color: black; }
+                      }
+                      p { color: yellow; }
+                    </pre>
+                    </li>
+                    <pre>
+                    <li>A. 紅色</li>
+                    <li>B. 黑色</li>
+                    <li>C. 黃色</li>
+                    <li>D. 藍色</li>
+                  </pre>
+                  </ul>
+                </td>
+                <td class="table-body">
+                  <p>C</p>
+                  <p>相同權重的狀況下，黃色寫在後面所以被蓋過去了。</p>
+                </td>
+              </tr>
+            </tbody>
+          </table> <!-- Q3 -->
+          <table class="table-w">
+            <thead>
+              <tr>
+                <th scope="col" class="table-title">
+                  4. 根據以下 CSS，在螢幕解析度 600px 時文字的顏色為何？
+                </th>
+                <td class="table-title"></td>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td class="pb-10">
+                  <ul>
+                    <li>
+                    <pre>
+                      p { color: yellow; }
+                      @media (min-width: 576px){
+                          p { color: red;}
+                      }
+                      @media (min-width: 768px){
+                          p { color: black;}
+                      }
+                    </pre>
+                    </li>
+                    <pre>
+                    <li>A. 紅色</li>
+                    <li>B. 黑色</li>
+                    <li>C. 黃色</li>
+                    <li>D. 藍色</li>
+                  </pre>
+                  </ul>
+                </td>
+                <td class="table-body">
+                  <p>A</p>
+                  <p>600px 大於 576px、小於 768px，所以是紅色。</p>
+                </td>
+              </tr>
+            </tbody>
+          </table> <!-- Q4 -->
+          <table class="table-w">
+            <thead>
+              <tr>
+                <th scope="col" class="table-title">
+                  5. 針對響應式圖片的設定，應該幫 img 標籤加上什麼語法？
+                </th>
+                <td class="table-title"></td>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td class="pb-10">
+                  <ul>
+                    <pre>
+                    <li>A. max-width:100%</li>
+                    <li>B. width:100% </li>
+                    <li>C. max-width: 100px</li>
+                    <li>D. width: 100px</li>
+                  </pre>
+                  </ul>
+                </td>
+                <td class="table-body">A</td>
+              </tr>
+            </tbody>
+          </table> <!-- Q5 -->
+        <!-- 作業結束 -->
+      </div>
+    </div>
+    
+
+    <script type="module" src="../main.js"></script>
+  </body>
+</html>

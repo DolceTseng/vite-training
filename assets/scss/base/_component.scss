@@ -1,0 +1,54 @@
+//card
+.card {
+    width: 800px;
+    margin: 20px;
+    border: 2px solid $black-color;
+    // border-radius: 2px;
+    box-shadow: 4px 4px 0 0 $black-color;
+    padding: 8px;
+}
+span {
+    font-weight: bold;
+    padding-bottom: 8px;
+}
+
+//table
+.table-w {
+    margin-left: 20px;
+    margin-top: 8px;
+    width: 1000px;
+    border: 2px solid $black-color;
+    &:hover {
+        box-shadow: 4px 4px 0 0 $black-color;
+        transform:translate(-2px,-2px); //向左向上移-2px
+        transition:.3s;
+        .table-body {
+            transition: .3s;
+            opacity: 1;
+        }
+    }
+ }
+ .table-title {
+    padding: 10px;
+    font-size: 17px;
+    text-align: left;
+    // background-color:  #ced2d745;
+    border-bottom: 2px solid $black-color;
+    width:50%;
+ }
+
+// ul.px-10
+.table-subtitle {
+    padding-left: 10px;
+    color: blue;
+}
+ .table-body {
+    opacity: 0;
+    text-align: center;
+    vertical-align: middle;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-bottom: 10px; 
+ }
+
+ 

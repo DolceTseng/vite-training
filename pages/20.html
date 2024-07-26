@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dolce's Project</title>
+    <link rel="shortcut icon" href="../assets/images/dolce-icon.png" />
+  </head>
+  <body>
+    <%- include('./layout/header'); -%>
+    
+    <div class="bg d-flex">
+      <%- include('./layout/sidebar'); -%>
+      
+      <div class="container content-scroll pr-20">
+        <!-- 這是 title 勿動 -->
+          <div class="border-b d-flex jcsb aic">
+            <h2 class="h2">🏅 Day 20 - CSS 權重覆蓋</h2>
+            <time>2024/07/19</time>
+          </div>
+          <p class="card">作業說明：請回答以下問題 <br/>口訣：先看權重再看先後<br/>ID > class > tag </p>
+          <!-- 作業開始 -->
+          <table class="table-w">
+            <thead>
+              <tr>
+                <th scope="col" class="table-title">1.請問 p 標籤內文字是什麼顏色</th>
+                <td class="table-title"></td>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td class="pb-10">
+                  <ul>
+                    <p class="table-subtitle mt-10">HTML</p>
+                    <li>
+                      <pre>
+
+                      &lt;p class="blue red black">這是藍色ㄉ文字&lt;/p&gt;
+
+                      </pre>
+                    </li>
+                    <p class="table-subtitle mt-10">CSS</p>
+                    <li>
+                      <pre>
+                      p {
+                        color: white;
+                      }
+
+                      .black {
+                        color: black;
+                      }
+                      
+                      .blue {
+                        color: blue;
+                      }
+                      
+                      .red {
+                        color: red;
+                      }
+                    </pre>
+                    </li>
+                  </ul>
+                </td>
+                <td class="table-body">Answer: 紅色</td>
+              </tr>
+            </tbody>
+          </table> <!-- Q1 -->
+          <table class="table-w">
+            <thead>
+              <tr>
+                <th scope="col" class="table-title">2.請問 p 標籤內文字是什麼顏色</th>
+                <td class="table-title"></td>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td class="pb-10">
+                  <ul>
+                    <p class="table-subtitle  mt-10">HTML</p>
+                    <li>
+                      <pre>
+
+                      &lt;p class="a p">這是藍色ㄉ文字&lt;/p&gt;
+
+                      </pre>
+                    </li>
+                    <p class="table-subtitle  mt-10">CSS</p>
+                    <li>
+                      <pre>
+                        p {
+                          color: white;
+                        }
+                        
+                        .p {
+                          color: blue;
+                        }
+                        
+                        a {
+                          color: red;
+                        }
+                    </pre>
+                    </li>
+                  </ul>
+                </td>
+                <td class="table-body">Answer: 藍色</td>
+              </tr>
+            </tbody>
+          </table> <!-- Q2 -->
+          <table class="table-w">
+            <thead>
+              <tr>
+                <th scope="col" class="table-title">3.請問 p 標籤內文字是什麼顏色</th>
+                <td class="table-title"></td>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td class="pb-10">
+                  <ul>
+                    <p class="table-subtitle mt-10">HTML</p>
+                    <li>
+                      <pre>
+                        
+                      &lt;p class="p blue" id="blue">這是藍色ㄉ文字&lt;/p&gt;
+
+                      </pre>
+                    </li>
+                    <p class="table-subtitle mt-10">CSS</p>
+                    <li>
+                      <pre>
+                        .p {
+                          color: blue;
+                        }
+                        
+                        .blue {
+                          color: red;
+                        }
+                        
+                        p.blue {
+                          color: green;
+                        }
+                        
+                        #blue {
+                          color: white;
+                        }
+                    </pre>
+                    </li>
+                  </ul>
+                </td>
+                <td class="table-body">Answer: 白色</td>
+              </tr>
+            </tbody>
+          </table> <!-- Q3 -->
+        
+        <!-- 作業結束 -->
+      </div>
+    </div>
+    
+
+    <script type="module" src="../main.js"></script>
+  </body>
+</html>

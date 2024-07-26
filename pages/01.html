@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dolce's Project</title>
+    <link rel="shortcut icon" href="../assets/images/dolce-icon.png" />
+  </head>
+  <body>
+    <%- include('./layout/header'); -%>
+    
+    <div class="bg d-flex">
+      <%- include('./layout/sidebar'); -%>
+      
+      <div class="container content-scroll pr-20">
+        <!-- 這是 title 勿動 -->
+          <div class="border-b d-flex jcsb aic">
+            <h2 class="h2">🏅 Day 1 - HTML 語意標籤運用</h2>
+            <time>2024/06/24</time>
+          </div>
+          <p class="card">作業說明：修改 HTML 使用正確的標籤。 </p>
+        <!-- 作業開始 -->
+          <div><h1>網頁切版直播班</h1>
+        <h2>CSS 技術全都要</h2>
+         <!-- 調整標題標籤（一個網頁只會有一個 h1） -->
+        
+        <h3>由淺入深的課程大綱</h3>
+        <p>這門課程，我們是以「 業界常見版型主題 」為導向，來規劃我們的課綱，讓您上完課後，就能夠開始動手練版型。</p> <!-- 調整標籤 -->
+        <h4>第一週：1 px 也不差的版型控制術</h4> <!-- 調整標題標籤（標題標籤依照重要性依序使用） -->
+        <p>在排版時，常常為了幾 px 的位移或跑版而傷透腦筋嗎？其實只要掌握幾個關鍵知識，你也能切出精準到位的版型！</p><!-- 新增標籤 -->
+        <h4>第八週：CSS 模組化管理</h4> <!-- 調整標題標籤（標題標籤依照重要性依序使用） -->
+        <p>一個成熟的前端介面，不論是版型管理、語法支援度、元件應用都得顧及到位，本週將會詳細介紹各角度的技術詮釋，以做為完美的收尾。</p> <!-- 新增標籤 -->
+        
+        <h3>授課內容</h3> <!-- 調整位置 -->
+        <ul>
+          <li>開課日期：2022 7/8(五)</li> <!-- 新增標籤（ul 的子層） -->
+          <li>授課時段：7/8～8/31 每週三跟五，共 16 堂</li>
+          <li>教學時數：每堂 1.5 ~ 2.5 小時，共 16 堂，總計 36 小時</li>
+          <li><a href="https://zoom.us/webinar/register/WN_RINyZud-QGyJgk-gaWQL9A">直播教室</a></li><!-- 新增標籤（ul 的子層）、調整 a 標籤內屬性 -->
+        </ul>
+        <img src="https://www.hexschool.com/images/web-layout-training/web-layout-training-banner-2022.jpeg" alt="網頁切版直播班圖片" > <!-- alt 屬性文字描述 -->
+          </div>
+        <!-- 作業結束 -->
+      </div>
+    </div>
+    
+
+    <script type="module" src="../main.js"></script>
+  </body>
+</html>

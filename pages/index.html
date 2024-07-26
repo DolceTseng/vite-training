@@ -4,16 +4,30 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>index</title>
+    <title>Dolce's Project</title>
+    <link rel="shortcut icon" href="../assets/images/dolce-icon.png" />
   </head>
   <body>
     <%- include('./layout/header'); -%>
+    
+    <div class="bg d-flex">
+      <%- include('./layout/sidebar'); -%>
 
-    <h1 class="index-title">我是首頁</h1>
-    <h2>哎呦</h2>
-    <img src="../assets/images/cat.jpg" style="width: 300px;" alt="cat">
-
-    <%- include('./layout/footer'); -%>
+        <div class="container content-scroll">
+          <div class="border-b d-flex aic">
+            <h2 class="h1">六角學院 2024-切版直播班每日任務</h2>
+          </div>
+          <div class="badges d-flex">
+            <img src="https://img.shields.io/badge/html5-%23E34F26.svg?style=for-the-badge&logo=html5&logoColor=white" alt="html5">
+            <img src="https://img.shields.io/badge/css3-%231572B6.svg?style=for-the-badge&logo=css3&logoColor=white" alt="css3">
+            <img src="https://img.shields.io/badge/SASS-hotpink.svg?style=for-the-badge&logo=SASS&logoColor=white" alt="scss">
+            <img src="https://img.shields.io/badge/vite-%23646CFF.svg?style=for-the-badge&logo=vite&logoColor=white" alt="vite">
+            <img src="https://img.shields.io/badge/github%20pages-121013?style=for-the-badge&logo=github&logoColor=white" alt="GitHub pages">
+          </div>
+          <p class="card">💭 原子習慣：作者詹姆斯·克萊爾提到，每天只要進步1%，一年後你就會成長37倍；<br/>這意味著小而持續的改變，像原子一樣累積，最終產生巨大的影響； <br/>每天一個小小的切版觀念，不知不覺中知識就進入了腦袋。 </p>
+        </div>
+    </div>
+    
 
     <script type="module" src="../main.js"></script>
   </body>

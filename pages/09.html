@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dolce's Project</title>
+    <link rel="shortcut icon" href="../assets/images/dolce-icon.png" />
+  </head>
+  <body>
+    <%- include('./layout/header'); -%>
+    
+    <div class="bg d-flex">
+      <%- include('./layout/sidebar'); -%>
+      
+      <div class="container content-scroll pr-20">
+        <!-- 這是 title 無動 -->
+          <div class="border-b d-flex jcsb aic">
+            <h2 class="h2">🏅 Day 9 - 練習 Emmet 語法</h2>
+            <time>2024/07/04</time>
+          </div>
+          <p class="card">作業說明：請練習將以下圖中的排版利用 Emmet 語法寫出來，回報時請寫 Emmet 語法，<br/>例如：h1{標題}+p{Lorem ipsum dolor sit!}... <br/>
+            <img src="https://i.imgur.com/awIH1UN.png" alt="" class="img-thumbnail" width="150px"></p>
+          <!-- 作業開始 -->
+           <div class="d-flex">
+            <div>
+              <div class="card"><span>Answer:<br/></span>
+                <pre>h1{標題}+p{Lorem ipsum dolor sit!}+img[src="https://ithelp.ithome.com.tw/storage/image/logo.svg" alt="logo"]+(h2{副標題}+ul>li*3{$})+h2{副標題}+p{Lorem ipsum dolor sit!}</pre></div>
+              <div class="px-20">
+              <h1>標題</h1>
+            <p>Lorem ipsum dolor sit!</p>
+            <img src="https://ithelp.ithome.com.tw/storage/image/logo.svg" alt="logo">
+            <h2>副標題</h2>
+            <ul>
+              <li>1</li>
+              <li>2</li>
+              <li>3</li>
+            </ul>
+            <h2>副標題</h2>
+            <p>Lorem ipsum dolor sit!</p>
+          </div>
+        </div>           
+          </div>
+
+        
+        <!-- 作業結束 -->
+      </div>
+    </div>
+    
+
+    <script type="module" src="../main.js"></script>
+  </body>
+</html>

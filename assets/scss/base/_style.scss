@@ -1,0 +1,10 @@
+.border-b {
+    border-bottom: 4px solid $primary-color;
+    margin-bottom: 10px;
+  }
+.content-scroll {
+  scroll-behavior: smooth; //無感?
+  overscroll-behavior: contain; //避免捲到父層
+  scrollbar-width: thin; 
+  scrollbar-color: lighten($primary-color,30%) #fff;
+}

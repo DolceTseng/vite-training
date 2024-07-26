@@ -1,0 +1,28 @@
+.container-layout{
+    // width: 1200px;
+    margin: 0 auto;
+  }
+  .h2-12{
+     font-size: 32px;
+    line-height: 48px;
+  }
+  .span-12{
+     font-size: 24px;
+    line-height: 36px;
+      margin-left: 16px;
+  }
+  .profile .span-12, .education .span-12 {
+    color: #A00404; 
+  }
+  
+  .bg-primari {
+    background-color: #415165;
+  }
+  
+  .skills .h2-12, .contact .h2-12 {
+    color: white;
+  }
+  
+  .mb-12 {
+    margin-bottom: 8px;
+  }

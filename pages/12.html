@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dolce's Project</title>
+    <link rel="shortcut icon" href="../assets/images/dolce-icon.png" />
+  </head>
+  <body>
+    <%- include('./layout/header'); -%>
+    
+    <div class="bg d-flex">
+      <%- include('./layout/sidebar'); -%>
+      
+      <div class="container content-scroll pr-20">
+        <!-- 這是 title 無動 -->
+          <div class="border-b d-flex jcsb aic">
+            <h2 class="h2">🏅 Day 12 - 整合相同樣式</h2>
+            <time>2024/07/09</time>
+          </div>
+          <div class="card">
+            <p>作業說明：相同樣式設定，可以嘗試統一使用一個 class 命名，整合樣式。可以簡化程式碼、增加程式碼的可讀性以及複用性。</p>
+            <p>提示：</p>
+            <ul class="list-type">
+              <li>各區塊都有 width: 1200px; margin: 0 auto; 的設定</li>
+              <li>h2 標題的文字樣式相同</li>
+              <li>有兩種文字顏色，可以分別命名兩個 class 運用</li>
+              <li>各區塊 span 樣式相同（文字、margin）</li>
+            </ul>
+            </div>
+          <!-- 作業開始 -->
+          <div class="container-layout">
+            <div class="profile mb-12">
+            <h2 class="h2-12">個人資料<span class="span-12">PROFILE</span></h2>
+          </div>
+          <div class="education mb-12">
+            <h2 class="h2-12">學歷<span class="span-12">EDUCATION</span></h2>
+          </div>
+          <div class="bg-primari mb-12">
+            <div class="skills">
+              <h2 class="h2-12">技能<span class="span-12">SKILLS</span></h2>
+            </div>
+          </div>
+          <div class="bg-primari mb-12">
+            <div class="contact">
+              <h2 class="h2-12">聯絡方式<span class="span-12">CONTACT METHOD</span></h2>
+            </div>
+          </div>
+              </div>
+
+
+        
+        <!-- 作業結束 -->
+      </div>
+    </div>
+    
+
+    <script type="module" src="../main.js"></script>
+  </body>
+</html>

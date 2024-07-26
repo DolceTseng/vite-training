@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dolce's Project</title>
+    <link rel="shortcut icon" href="../assets/images/dolce-icon.png" />
+  </head>
+  <body>
+    <%- include('./layout/header'); -%>
+    
+    <div class="bg d-flex">
+      <%- include('./layout/sidebar'); -%>
+      
+      <div class="container content-scroll pr-20">
+        <!-- 這是 title 無動 -->
+          <div class="border-b d-flex jcsb aic">
+            <h2 class="h2">🏅 Day 13 - 文字設定（font-family、font-weight、font-style）</h2>
+            <time>2024/07/10</time>
+          </div>
+          <p class="card">作業說明：練習載入 Google Fonts Castoro 字型
+            （需載入 Regular / 斜體 樣式）</p>
+          <!-- 作業開始 -->
+          <div class="text-center-13">
+            <p class="font-size-13">Regular</p>
+            <p class="italic">Italic</p>
+          </div>
+        <!-- 作業結束 -->
+      </div>
+    </div>
+    
+
+    <script type="module" src="../main.js"></script>
+  </body>
+</html>

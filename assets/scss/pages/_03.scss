@@ -1,0 +1,19 @@
+.link{
+    display: inline-block;
+    margin: 20px;
+    font-size: 20px;
+    color: white;
+    text-decoration:none;
+    background-color: #E6D1B1;
+    padding: 4px 8px;
+  }
+  .link:hover{
+    background-color: #5e5a54;
+  }
+  .link:focus{
+    color: #3D392A;
+    background-color: #E8E5DA;
+  }
+  .link:active{
+    background-color: #ffe4b8;
+  }

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dolce's Project</title>
+    <link rel="shortcut icon" href="../assets/images/dolce-icon.png" />
+  </head>
+  <body>
+    <%- include('./layout/header'); -%>
+    
+    <div class="bg d-flex">
+      <%- include('./layout/sidebar'); -%>
+      
+      <div class="container content-scroll pr-20">
+        <!-- 這是 title 無動 -->
+          <div class="border-b d-flex jcsb aic">
+            <h2 class="h2">🏅 Day 11 - 文字設定（font-size、line-height）</h2>
+            <time>2024/07/08</time>
+          </div>
+          <p class="card">作業說明：請依照第一週設計稿，將程式碼加入文字樣式設定，記得字體也要載入。</p>
+          <!-- 作業開始 -->
+          <div class="container-work">
+            <div class="w-50">
+              <h3 class="title-work">
+                Adwards
+              </h3>
+              <ul class="content-work">
+                <li>Best in Show Award, National Advertising Awards, 2020</li>
+                <li>Honorable Mention, International Design Competition, 2019</li>
+                <li>People's Choice Award, Local Art Exhibition, 2018</li>
+              </ul>
+            </div>
+          </div>
+        <!-- 作業結束 -->
+      </div>
+    </div>
+    
+
+    <script type="module" src="../main.js"></script>
+  </body>
+</html>
