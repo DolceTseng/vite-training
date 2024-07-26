@@ -51,4 +51,21 @@ span {
     padding-bottom: 10px; 
  }
 
+
+//btn
+.card-btn {
+    padding:8px 20px;
+    color: $dark-primary;
+    border: 2px solid currentColor;
+    background-color: #fff;
+    box-shadow: 4px 4px 0 0 $black-color;
+    transform:translate(-1px,-1px); //向左向上移-2px
+    transition:.3s;
+    cursor:pointer;
+    &:hover {
+        color: $primary-color;
+        box-shadow: none;
+        transform: translate(0,0);
+    }
+}
  

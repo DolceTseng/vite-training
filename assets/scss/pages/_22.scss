@@ -1,0 +1,38 @@
+
+.container-22 {
+    max-width: 1296px;
+    margin: 0 auto;
+    padding: 12px;
+  }
+  
+  .card-22 {
+    display: flex;
+    flex-wrap: wrap;
+    margin: -12px;
+  }
+  
+  .card-item-22 {
+    width: 25%;
+    padding: 12px;
+  }
+  
+  @media (max-width: 768px) {
+    .card-item-22 {
+    width:50%;
+    }
+    .container-22 {
+      max-width: 720px; 
+    }
+  }
+  @media (max-width: 576px) {
+    .card-item-22 {
+    width:100%;
+    }
+    .container-22 {
+      max-width: 372px;
+    }
+  }
+  
+  .card-btn-22 {
+    padding: 4px 8px;
+  }
