@@ -62,142 +62,103 @@
       <div class="container content-scroll pr-20">
         <!-- 這是 title 勿動 -->
           <div class="border-b d-flex jcsb aic">
-            <h2 class="h2">🏅 Day 20 - CSS 權重覆蓋</h2>
-            <time>2024/07/19</time>
+            <h2 class="h2">🏅 Day 26 - 錨點練習</h2>
+            <time>2024/07/29</time>
           </div>
-          <p class="card">作業說明：請回答以下問題 <br/>口訣：先看權重再看先後<br/>ID > class > tag </p>
+          <p class="card">作業說明：練習在 nav a 的 href 加上連結，來連到各區塊</p>
           <!-- 作業開始 -->
-          <table class="table-w">
-            <thead>
-              <tr>
-                <th scope="col" class="table-title">1.請問 p 標籤內文字是什麼顏色</th>
-                <td class="table-title"></td>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td class="pb-10">
-                  <ul>
-                    <p class="table-subtitle mt-10">HTML</p>
-                    <li>
-                      <pre>
+          <div>
+            <h3 class="h3">HTML</h3>
+            <div class="code">
+              <pre>
+                &lt;body&gt;
+  &lt;nav class="nav"&gt;
+    &lt;h1&gt;&lt;a href="#" class="logo"&gt;&lt;img src="https://www.filepicker.io/api/file/tNa2so2RRMuedpc2yydt" alt="logo" width="100"&gt;&lt;/a&gt;&lt;/h1&gt;
 
-                      &lt;p class="blue red black">這是藍色ㄉ文字&lt;/p&gt;
-
-                      </pre>
-                    </li>
-                    <p class="table-subtitle mt-10">CSS</p>
-                    <li>
-                      <pre>
-                      p {
-                        color: white;
-                      }
-
-                      .black {
-                        color: black;
-                      }
-                      
-                      .blue {
-                        color: blue;
-                      }
-                      
-                      .red {
-                        color: red;
-                      }
-                    </pre>
-                    </li>
-                  </ul>
-                </td>
-                <td class="table-body">Answer: 紅色</td>
-              </tr>
-            </tbody>
-          </table> <!-- Q1 -->
-          <table class="table-w">
-            <thead>
-              <tr>
-                <th scope="col" class="table-title">2.請問 p 標籤內文字是什麼顏色</th>
-                <td class="table-title"></td>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td class="pb-10">
-                  <ul>
-                    <p class="table-subtitle  mt-10">HTML</p>
-                    <li>
-                      <pre>
-
-                      &lt;p class="a p">這是藍色ㄉ文字&lt;/p&gt;
-
-                      </pre>
-                    </li>
-                    <p class="table-subtitle  mt-10">CSS</p>
-                    <li>
-                      <pre>
-                        p {
-                          color: white;
-                        }
-                        
-                        .p {
-                          color: blue;
-                        }
-                        
-                        a {
-                          color: red;
-                        }
-                    </pre>
-                    </li>
-                  </ul>
-                </td>
-                <td class="table-body">Answer: 藍色</td>
-              </tr>
-            </tbody>
-          </table> <!-- Q2 -->
-          <table class="table-w">
-            <thead>
-              <tr>
-                <th scope="col" class="table-title">3.請問 p 標籤內文字是什麼顏色</th>
-                <td class="table-title"></td>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td class="pb-10">
-                  <ul>
-                    <p class="table-subtitle mt-10">HTML</p>
-                    <li>
-                      <pre>
-                        
-                      &lt;p class="p blue" id="blue">這是藍色ㄉ文字&lt;/p&gt;
-
-                      </pre>
-                    </li>
-                    <p class="table-subtitle mt-10">CSS</p>
-                    <li>
-                      <pre>
-                        .p {
-                          color: blue;
-                        }
-                        
-                        .blue {
-                          color: red;
-                        }
-                        
-                        p.blue {
-                          color: green;
-                        }
-                        
-                        #blue {
-                          color: white;
-                        }
-                    </pre>
-                    </li>
-                  </ul>
-                </td>
-                <td class="table-body">Answer: 白色</td>
-              </tr>
-            </tbody>
-          </table> <!-- Q3 -->
+    &lt;ul class="nav-list"&gt;
+      &lt;li class="nav-item"&gt;&lt;a class="nav-link" href="#"&gt;首頁&lt;/a&gt;&lt;/li&gt;
+      &lt;li class="nav-item"&gt;&lt;a class="nav-link" href="#profile"&gt;個人&lt;/a&gt;&lt;/li&gt;
+      &lt;li class="nav-item"&gt;&lt;a class="nav-link" href="#edu"&gt;學歷&lt;/a&gt;&lt;/li&gt;
+      &lt;li class="nav-item"&gt;&lt;a class="nav-link" href="#skills"&gt;技能&lt;/a&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/nav&gt;
+  &lt;div class="container"&gt;
+    &lt;section id="header" class="mb-3"&gt;
+      &lt;img class="banner"
+           src="https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/student-week1/banner.png" alt=""&gt;
+    &lt;/section&gt;
+    &lt;section id="profile" class="mb-3"&gt;
+      個人資料區塊
+    &lt;/section&gt;
+    &lt;section id="edu" class="mb-3"&gt;
+      學歷區塊
+    &lt;/section&gt;
+    &lt;section id="skills" class="mb-3"&gt;
+      技能區塊
+    &lt;/section&gt;
+  &lt;/div&gt;
+&lt;/body&gt;
+              </pre>
+            </div>
+          </div>
+          <div>
+            <h3 class="h3">CSS</h3>
+            <div class="code">
+              <pre>
+                .nav{
+                  background-color: #e8eeea;
+                  padding: 0 10px;
+                  margin-bottom: 25px;
+                  display: flex;
+                  justify-content: space-between;
+                  align-items: center;
+                }
+                .nav-list{
+                  display: flex;
+                }
+                .nav-link{
+                  text-decoration: none;
+                  color: #00cc99;
+                  padding: 5px 10px;
+                }
+                .container{
+                  width:900px;
+                  margin: 0 auto;
+                }
+                .mb-3{
+                  margin-bottom: 300px;
+                }
+              </pre>
+            </div>
+          </div>
+          <div>
+            <h3 class="h3">Result</h3>
+            <nav class="nav-26">
+              <h1><a href="#" class="logo"><img src="https://www.filepicker.io/api/file/tNa2so2RRMuedpc2yydt" alt="logo" width="100"></a></h1>
+          
+              <ul class="nav-list-26">
+                <li class="nav-item-26"><a class="nav-link-26" href="#">首頁</a></li>
+                <li class="nav-item-26"><a class="nav-link-26" href="#profile-26">個人</a></li>
+                <li class="nav-item-26"><a class="nav-link-26" href="#edu-26">學歷</a></li>
+                <li class="nav-item-26"><a class="nav-link-26" href="#skills-26">技能</a></li>
+              </ul>
+            </nav>
+            <div class="container-26">
+              <section id="header-26" class="mb-3-26">
+                <img class="banner-26"
+                     src="https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/student-week1/banner.png" alt="">
+              </section>
+              <section id="profile-26" class="mb-3-26">
+                個人資料區塊
+              </section>
+              <section id="edu-26" class="mb-3-26">
+                學歷區塊
+              </section>
+              <section id="skills-26" class="mb-3-26">
+                技能區塊
+              </section>
+            </div>
+          </div>
         
         <!-- 作業結束 -->
       </div>

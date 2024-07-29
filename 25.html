@@ -62,142 +62,14 @@
       <div class="container content-scroll pr-20">
         <!-- 這是 title 勿動 -->
           <div class="border-b d-flex jcsb aic">
-            <h2 class="h2">🏅 Day 20 - CSS 權重覆蓋</h2>
-            <time>2024/07/19</time>
+            <h2 class="h2">🏅 Day 25 - 下拉選單</h2>
+            <time>2024/07/26</time>
           </div>
-          <p class="card">作業說明：請回答以下問題 <br/>口訣：先看權重再看先後<br/>ID > class > tag </p>
+          <p class="card">作業說明：請大家試著了解<a href="https://codepen.io/hexschool/pen/PoRzrpK">下拉選單</a>的操作，簡單用文字描述這是如何透過 css 及 jQuery 做出該效果。 </p>
           <!-- 作業開始 -->
-          <table class="table-w">
-            <thead>
-              <tr>
-                <th scope="col" class="table-title">1.請問 p 標籤內文字是什麼顏色</th>
-                <td class="table-title"></td>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td class="pb-10">
-                  <ul>
-                    <p class="table-subtitle mt-10">HTML</p>
-                    <li>
-                      <pre>
 
-                      &lt;p class="blue red black">這是藍色ㄉ文字&lt;/p&gt;
 
-                      </pre>
-                    </li>
-                    <p class="table-subtitle mt-10">CSS</p>
-                    <li>
-                      <pre>
-                      p {
-                        color: white;
-                      }
 
-                      .black {
-                        color: black;
-                      }
-                      
-                      .blue {
-                        color: blue;
-                      }
-                      
-                      .red {
-                        color: red;
-                      }
-                    </pre>
-                    </li>
-                  </ul>
-                </td>
-                <td class="table-body">Answer: 紅色</td>
-              </tr>
-            </tbody>
-          </table> <!-- Q1 -->
-          <table class="table-w">
-            <thead>
-              <tr>
-                <th scope="col" class="table-title">2.請問 p 標籤內文字是什麼顏色</th>
-                <td class="table-title"></td>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td class="pb-10">
-                  <ul>
-                    <p class="table-subtitle  mt-10">HTML</p>
-                    <li>
-                      <pre>
-
-                      &lt;p class="a p">這是藍色ㄉ文字&lt;/p&gt;
-
-                      </pre>
-                    </li>
-                    <p class="table-subtitle  mt-10">CSS</p>
-                    <li>
-                      <pre>
-                        p {
-                          color: white;
-                        }
-                        
-                        .p {
-                          color: blue;
-                        }
-                        
-                        a {
-                          color: red;
-                        }
-                    </pre>
-                    </li>
-                  </ul>
-                </td>
-                <td class="table-body">Answer: 藍色</td>
-              </tr>
-            </tbody>
-          </table> <!-- Q2 -->
-          <table class="table-w">
-            <thead>
-              <tr>
-                <th scope="col" class="table-title">3.請問 p 標籤內文字是什麼顏色</th>
-                <td class="table-title"></td>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td class="pb-10">
-                  <ul>
-                    <p class="table-subtitle mt-10">HTML</p>
-                    <li>
-                      <pre>
-                        
-                      &lt;p class="p blue" id="blue">這是藍色ㄉ文字&lt;/p&gt;
-
-                      </pre>
-                    </li>
-                    <p class="table-subtitle mt-10">CSS</p>
-                    <li>
-                      <pre>
-                        .p {
-                          color: blue;
-                        }
-                        
-                        .blue {
-                          color: red;
-                        }
-                        
-                        p.blue {
-                          color: green;
-                        }
-                        
-                        #blue {
-                          color: white;
-                        }
-                    </pre>
-                    </li>
-                  </ul>
-                </td>
-                <td class="table-body">Answer: 白色</td>
-              </tr>
-            </tbody>
-          </table> <!-- Q3 -->
         
         <!-- 作業結束 -->
       </div>
