@@ -11,7 +11,23 @@ span {
     font-weight: bold;
     padding-bottom: 8px;
 }
-
+//code
+.code {
+    color: $black-color;
+    width: 800px;
+    max-height: 300px;
+    margin: 20px;
+    border: 2px solid $black-color;
+    // border-radius: 2px;
+    box-shadow: 4px 4px 0 0 $black-color;
+    padding: 8px;
+    
+    overflow: auto;
+    scroll-behavior: smooth; //無感?
+    overscroll-behavior: contain; //避免捲到父層
+    scrollbar-width: thin; 
+    scrollbar-color: lighten($primary-color,30%) #fff;
+}
 //table
 .table-w {
     margin-left: 20px;

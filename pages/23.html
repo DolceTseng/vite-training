@@ -28,6 +28,40 @@
             <li>性別中的「男」「女」一次只能擇一選擇，預設為「男」，可以使用 checked 屬性</li>
           </ul>
           </div>
+          <!-- code -->
+           <div>
+            <h3 class="h3">HTML</h3>
+            <div class="code">
+              <pre>
+                  &lt;form class="form"&gt;
+                  &lt;div class="p-4 b"&gt;
+                    &lt;label for="name"&gt;姓名&lt;/label&gt;
+                    &lt;input name="account" id="name" type="text" placeholder="陳小明"&gt;
+                  &lt;/div&gt;
+                  &lt;div class="p-4 b"&gt;
+                    &lt;label for="email"&gt;信箱&lt;/label&gt;
+                    &lt;input type="email" name="account" id="email" placeholder="xxx@gmail.com"&gt;
+                  &lt;/div&gt;
+                  &lt;div class="p-4 b"&gt;
+                    &lt;label for="password"&gt;密碼&lt;/label&gt;
+                    &lt;input type="password" name="account" id="password"&gt;
+                  &lt;/div&gt;
+                  &lt;div class="p-4 b"&gt;
+                    &lt;label for="phonenumber"&gt;電話&lt;/label&gt;
+                    &lt;input type="number" name="account" id="phonenumber" placeholder="0912-345-678"&gt;
+                  &lt;/div&gt;
+                  &lt;div class="p-4 b"&gt;
+                    &lt;p&gt;性別&lt;/p&gt;
+                    &lt;label for="male"&gt;男&lt;/label&gt;
+                    &lt;input type="radio" name="account" id="male" checked&gt;
+                    &lt;label for="female"&gt;女&lt;/label&gt;
+                    &lt;input type="radio" name="account" id="female"&gt;
+                  &lt;/div&gt;
+                  &lt;input type="submit" value="送出" class="b"&gt;
+                &lt;/form&gt;
+              </pre>
+            </div>
+          </div>
           <!-- 作業開始 -->
           <form class="form">
             <div class="p-4 b">
@@ -62,7 +96,6 @@
       </div>
     </div>
     
-
     <script type="module" src="../main.js"></script>
   </body>
 </html>
