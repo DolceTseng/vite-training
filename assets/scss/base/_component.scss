@@ -29,11 +29,11 @@ span {
     scrollbar-width: thin; 
     scrollbar-color: lighten($primary-color,30%) #fff;
 }
-.oneline-code {
+.code-ligh {
     color: $black-color;
     font-size: 16px;
-    // width: 800px;
-    height: 100px;
+    width: 400px;
+    // max-height: 300px;
     margin: 20px;
     border: 2px solid $black-color;
     // border-radius: 2px;
