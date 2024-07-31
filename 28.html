@@ -62,55 +62,29 @@
         </p>
 </footer></div>      
       <div class="container content-scroll pr-20">
-        <!-- 這是 title 無動 -->
+        <!-- 這是 title 勿動 -->
           <div class="border-b d-flex jcsb aic">
-            <h2 class="h2">🏅 Day 6 - box-model</h2>
-            <time>2024/07/01</time>
+            <h2 class="h2">🏅 Day 28 - SCSS 排序</h2>
+            <time>2024/07/31</time>
           </div>
-          <p class="card">作業說明： 請問 .box 實際高度是多少？<br/>(請不要用瀏覽器觀察) </p>
+          <div class="card">作業說明：在 all.scss 檔中，載入的檔案順序正確是非常重要的事，請回覆下方的順序需要怎麼修改，以及原因 <br/>
+            <ul>
+              <li>@import "layout"</li>
+              <li>@import "reset"</li>
+              <li>@import "variable" </li>
+            </ul>
+          </div>
           <!-- 作業開始 -->
-          <div class="box mt-4">
-            <p class="text">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo, provident sed illum recusandae nobis quidem? Cum nostrum, ab consectetur dolore fuga odit animi, debitis non quam deleniti sit numquam pariatur.
-              請問 .box 實際高度是多少？(請不要用瀏覽器觀察)
-            </p>
-            <img class="image" src="https://ithelp.ithome.com.tw/storage/image/logo.svg" alt="ithome">
-          </div>   
-            <div class="row mt-10">
-              <div class="col-6">
-              <table class="table table-sm">
-                <tr>
-                  <td>2px</td><td> => top-border</td>
-                </td>
-                <tr>
-                  <td>24px</td>
-                  <td> => line-height+font-size 第一行</td>
-                </tr>
-                <tr>
-                  <td>24px</td>
-                  <td> => line-height+font-size 第二行</td>
-                </tr>
-                <tr>
-                  <td>30px</td>
-                  <td> => margin-bottom</td>
-                </tr>
-                <tr>
-                  <td>30px</td>
-                  <td> => margin-bottom</td>
-                </tr>
-                <tr>
-                  <td>30px</td>
-                  <td> => img-height</td>
-                </tr>
-                <tr>
-                  <td>2px</td>
-                  <td> => bottom-border</td>
-                </tr>
-                <tfoot>
-                  <td class="colspan-2">Answer: 121px</td>
-                </tfoot>
-              </talbe>
-            </div></div>
+          <div>
+            <h3 class="h3">all.scss</h3>
+            <div class="code">
+              <pre>
+                @import "variable"  // 變數定義可能會在其他 scss 中被使用，為確保所有樣式文件都可以存取，所以放在 reset 前面。
+                @import "reset"    // 清除瀏覽器預設樣式。
+                @import "layout"  
+              </pre>
+            </div>
+          </div>
 
 
         
