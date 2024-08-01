@@ -63,25 +63,88 @@
         </p>
 </footer></div>      
       <div class="container content-scroll pr-20">
-        <!-- 這是 title 無動 -->
+        <!-- 這是 title 勿動 -->
           <div class="border-b d-flex jcsb aic">
-            <h2 class="h2">🏅 Day 11 - 文字設定（font-size、line-height）</h2>
-            <time>2024/07/08</time>
+            <h2 class="h2">🏅 Day 29 - mixin</h2>
+            <time>2024/08/01</time>
           </div>
-          <p class="card">作業說明：請依照第一週設計稿，將程式碼加入文字樣式設定，記得字體也要載入。</p>
+          <p class="card">作業說明：利用 mixin 搭配 include 的方法讓 CSS 換一個寫法，省去重複寫 @media 的問題。 </p>
           <!-- 作業開始 -->
-          <div class="container-work">
-            <div class="w-50">
-              <h3 class="title-work">
-                Adwards
-              </h3>
-              <ul class="content-work">
-                <li>Best in Show Award, National Advertising Awards, 2020</li>
-                <li>Honorable Mention, International Design Competition, 2019</li>
-                <li>People's Choice Award, Local Art Exhibition, 2018</li>
-              </ul>
+          <div class="d-flex">
+            <div class="css">
+              <h3 class="h3">CSS</h3>
+              <div class="code-ligh">
+                <pre>
+                  .header{
+                    width: 500px;
+                  }
+                  
+                  @media(max-width: 768px){
+                    .header{
+                    width: 13px;
+                    font-size: 20px;
+                    }
+                  }
+                  
+                  @media(max-width: 568px){
+                    .header{
+                    font-size: 8px;
+                    }
+                  }
+                  
+                  .header a{
+                    background: black;
+                  }
+                  
+                  @media(max-width: 568px){
+                    .header a{
+                    background: white;
+                    }
+                  }
+                </pre>
+              </div>
+            </div>
+            <div class="scss">
+              <h3 class="h3">SCSS</h3>
+              <div class="code-ligh">
+                <pre>
+                  @mixin pad{
+                    @media(max-width: 768px){
+                    @content;
+                    }
+                  }
+                  
+                  @mixin mobile{
+                    @media(max-width: 568px){
+                    @content;
+                    }
+                  }
+                  
+                  .header{
+                    width: 500px;
+                    @include pad {
+                      width: 13px;
+                                      font-size: 20px;
+                    }
+                  
+                    @include mobile {
+                      font-size: 8px;
+                    }
+                  
+                    a{
+                      background: black;
+                      @include mobile {
+                        background: white;
+                      }
+                    }
+                  }
+                </pre>
+              </div>
             </div>
           </div>
+
+
+        
         <!-- 作業結束 -->
       </div>
     </div>
